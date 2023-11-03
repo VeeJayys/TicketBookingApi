@@ -44,7 +44,7 @@ public class TicketController {
         ticketInfo=ticketService.findTicket(ticketId);
         if(ticketInfo!=null) {
             ticketService.deleteTicket(ticketInfo);
-            return new ResponseEntity<>("Ticket Cancelled", HttpStatus.ACCEPTED);
+            return new ResponseEntity<>("Ticket cancelled", HttpStatus.ACCEPTED);
         }
         return new ResponseEntity<>("Ticket status not found",HttpStatus.OK);
     }
