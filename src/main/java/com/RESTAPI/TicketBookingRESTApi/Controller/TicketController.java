@@ -46,7 +46,7 @@ public class TicketController {
             ticketService.deleteTicket(ticketInfo);
             return new ResponseEntity<>("Ticket Cancelled", HttpStatus.ACCEPTED);
         }
-        return new ResponseEntity<>("Tickedgit status not found",HttpStatus.OK);
+        return new ResponseEntity<>("Ticket status not found",HttpStatus.OK);
     }
     @GetMapping("/ticketDetails/{ticketId}")
     public ResponseEntity<TicketInfo> getTicketDetails(@PathVariable("ticketId") Integer ticketId){
